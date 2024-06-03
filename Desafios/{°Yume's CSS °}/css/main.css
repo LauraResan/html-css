@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+header {
+    font-family: galada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+#logo > span {
+    color: #ff9900;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex: 4%;
+    list-style-type: none;
+}
+
+ul > li {
+    padding: 5px;
+    color: #575757;
+}
+
+ul > li:hover, .selecionado{
+    color: #FF9900;
+}
+
+.header_div {
+    flex: 50%;
+}
+
+
+.header_div > p {
+    font-size: xx-large;
+}
+
+/*
+nome do elemento{
+
+}
+
+.nome da classe{
+
+}
+
+#nomeDoID {
+
+}
+*/

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto; /*deixa centralizado horizontalmente*/
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sint aut cumque, obcaecati, ipsa nisi quos at, inventore necessitatibus adipisci saepe id delectus dolores dolor. Modi autem ea at exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste, corrupti, nam delectus dignissimos officia quibusdam similique reprehenderit aspernatur possimus amet, voluptatibus temporibus accusantium. Architecto praesentium quidem dolorem sit omnis!LoremloremLorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quisquam odit quod in animi id necessitatibus, temporibus voluptas alias ipsam corporis explicabo omnis neque, rem laborum voluptatum. Recusandae, vitae obcaecati.
+            </p>
+                <!--recurso de responsividade para tamanho de imagens-->
+                <picture>
+                    <source media="(max-width:800px)" srcset="imagens/irina-blok-pq.jpg">
+                    <img src="imagens/irina-blok.jpg" alt="">
+                </picture>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sint aut cumque, obcaecati, ipsa nisi quos at, inventore necessitatibus adipisci saepe id delectus dolores dolor. Modi autem ea at exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste, corrupti, nam delectus dignissimos officia quibusdam similique reprehenderit aspernatur possimus amet, voluptatibus temporibus accusantium. Architecto praesentium quidem dolorem sit omnis!LoremloremLorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quisquam odit quod in animi id necessitatibus, temporibus voluptas alias ipsam corporis explicabo omnis neque, rem laborum voluptatum. Recusandae, vitae obcaecati.
+            </p>
+    </main>
+</body>
+</html>

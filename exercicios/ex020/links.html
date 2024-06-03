@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+
+<style>
+
+/* SELETORES PERSONALIZADOS
+    #   = id
+    .   = class
+    :   = pseudo-class
+    ::  = pseudo-element
+    >   = childrem
+*/
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:visited{
+        color: darkred;
+    }
+    a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+    a:active{
+        color: yellow;
+    }
+    .especial{
+        background-color: pink;
+    }
+    a::before{
+        content: '⇨';
+    }
+    a::after{
+        content: '⇦';
+    }
+    /*a::after{
+        content: ' [link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgray;
+    }*/
+</style>
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://www.amordoce.com/s2/home" target="_blank" class="especial">Site do amor doce</a></li>
+            <li><a href="https://amordoce.fandom.com/wiki/Categoria:Episódios_(High_School_Life)" target="_blank">Lista dos guias de episódios</a></li>
+            <li><a href="https://amordoce.fandom.com/wiki/Eric" target="_blank">Paquera mais odiado</a></li>
+        </ul>
+</body>
+</html>
