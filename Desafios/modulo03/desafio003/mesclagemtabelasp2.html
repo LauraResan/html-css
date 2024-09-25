@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de celulas</title>
+<style>
+    table{
+        width: 400px;
+        height: auto;
+        border-collapse: collapse;
+        margin: auto;
+    }
+    td{
+        border: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        height: 50px;
+    }
+    th{
+        background-color: gray;
+        border: 1px solid black;
+    }
+</style>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+        </tr>
+        <tr>
+            <th>1</th>
+
+            <td colspan="4">a</td>
+            <td rowspan="4">b</td>
+        </tr>
+        <tr>
+            <th>2</th>
+
+            <td rowspan="4">c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <th>3</th>
+
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <th>4</th>
+
+            <td>j</td>
+            <td>l</td>
+            <td>m</td>
+        </tr>
+        <tr>
+            <th>5</th>
+
+            <td colspan="4">n</td>
+        </tr>
+    </table>
+</body>
+</html>

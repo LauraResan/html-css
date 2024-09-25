@@ -14,8 +14,8 @@
     h1{
         text-transform: uppercase;
         text-align: center;
-        color: rgb(255, 255, 255);
-        text-shadow: 1px 1px 5px rgb(91, 19, 43);
+        color: rgb(255, 237, 240);
+        text-shadow: 1px 1px 5px rgb(121, 21, 54);
     }
 
     div{
@@ -26,14 +26,22 @@
         border-radius: 5px;
     }
 
+    div:nth-last-child(2){
+        background-color: rgb(255, 0, 72);
+        margin: 0%;
+        width: auto;
+        color: beige;
+    }
+
     table{
         width: 500px;
         margin: auto;
         border-collapse: collapse;
+        position: relative;
     }
 
     td,th{
-        border: 1px solid black;
+        border: 1px solid rgb(110, 0, 20);
         padding: 10px;
     }
 
@@ -43,11 +51,30 @@
 
     td:nth-child(2){
         text-align: right;
+        width: 100px;
     }
 
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+    }
 
     tbody{
         background-color: rgb(255, 221, 229);
+    }
+
+    tbody > tr:nth-child(even){
+
+        background: rgb(255, 183, 200);
+
+    }
+
+    thead> tr > th{
+
+        position: sticky;
+        top: 0;
+        background-color: rgb(255, 120, 176);
     }
 
     thead,tfoot{
@@ -63,6 +90,7 @@
 <!--
  --ANATOMIA PARA TABELAS GRANDES--
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -72,10 +100,11 @@
 -->
     <div>
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
                 </tr>
             </thead>
 
@@ -192,11 +221,17 @@
 
             <tfoot>
                 <tr>
-                    <th>Total de habitantes</th>
+                    <th scope="row">Total de habitantes</th>
                     <td><strong>212 583 720</strong></td>
                 </tr>
             </tfoot>
         </table>
     </div>
+    <br />
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio libero nesciunt assumenda! Quidem voluptatum quibusdam soluta placeat quae labore officiis, vero doloremque, non possimus sint deserunt. Pariatur, assumenda asperiores.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius dolore nam blanditiis eligendi non magnam minima ratione repudiandae. Repudiandae, iure aut! Itaque sed, possimus voluptatum ratione rerum temporibus voluptatibus!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laborum cum fuga! Consectetur consequuntur nemo quam, vel sint sed repellat odit architecto dolorum eum eaque. Error, voluptas. Eveniet, illum quod?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio libero nesciunt assumenda! Quidem voluptatum quibusdam soluta placeat quae labore officiis, vero doloremque, non possimus sint deserunt. Pariatur, assumenda asperiores.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius dolore nam blanditiis eligendi non magnam minima ratione repudiandae. Repudiandae, iure aut! Itaque sed, possimus voluptatum ratione rerum temporibus voluptatibus!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laborum cum fuga! Consectetur consequuntur nemo quam, vel sint sed repellat odit architecto dolorum eum eaque. Error, voluptas. Eveniet, illum quod?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio libero nesciunt assumenda! Quidem voluptatum quibusdam soluta placeat quae labore officiis, vero doloremque, non possimus sint deserunt. Pariatur, assumenda asperiores.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius dolore nam blanditiis eligendi non magnam minima ratione repudiandae. Repudiandae, iure aut! Itaque sed, possimus voluptatum ratione rerum temporibus voluptatibus!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laborum cum fuga! Consectetur consequuntur nemo quam, vel sint sed repellat odit architecto dolorum eum eaque. Error, voluptas. Eveniet, illum quod?</p>
+</div>
 </body>
 </html>
