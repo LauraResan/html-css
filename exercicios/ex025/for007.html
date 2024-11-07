@@ -4,69 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+
+<style>
+    table{
+        width: 500px;
+        border-collapse: collapse;
+        margin: auto;
+    }
+    caption{
+        font-size: x-large;
+    }
+    th,td{
+        border: 1px solid black;
+        height: 30px;
+    }
+    td{
+        padding: 4px;
+    }
+    div#conteiner{
+        display: flex;
+        gap: 10px;
+        margin-left: 50%;
+        align-items: center;
+        transform: translateX(-50%);
+    }    
+
+</style>
+
 </head>
 
 <body>
     <h1>Todos os Elementos de formulários aprendidos no capitulos 24</h1>
 
-    <table>
+    <div id="conteiner">
+
         
-    </table>
-
-
-    <form action="cadastro.php" method="post">
-        <fieldset>
-            <legend>Exemplos dos Inputs/Elementos </legend>
-        <div>
-            <label for="itexto">Input de Texto → </label>
-            <input type="text" name="texto" id="itexto" placeholder="Input que supórta todos os caracteres" minlength="10">  
+        <div class="elemento">
+            <table>
+                <thead>
+                    <th>Input</th>
+                    <th>funções</th>
+                </thead>
+                <tr>
+                    <td>text</td>
+                    <td>Permite inserir texto comum (como nome, endereço, etc.).</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>Similar ao text, mas oculta o conteúdo inserido, substituindo-o por pontos ou asteriscos.</td>
+                </tr>
+                <tr>
+                    <td>Number</td>
+                    <td>Permite inserir apenas valores numéricos, e normalmente exibe setas para aumentar ou diminuir o valor.</td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>Exibe um seletor de data para escolher um dia, mês e ano.</td>
+                </tr>
+                <tr>
+                    <td>month</td>
+                    <td>Permite selecionar apenas o mês e o ano (sem um dia específico).</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>Exibe um seletor de cor para escolher um valor hexadecimal de cor.</td>
+                </tr>
+                <tr>
+                    <td>range</td>
+                    <td>Exibe um controle deslizante para selecionar um valor dentro de um intervalo.</td>
+                </tr>
+                <tr>
+                    <td>file</td>
+                    <td>Permite ao usuário selecionar um arquivo do sistema para upload.</td>
+                </tr>
+                <tr>
+                    <td>submit</td>
+                    <td>Envia o formulário quando clicado.</td>
+                </tr>
+                <tr>
+                    <td>reset</td>
+                    <td>Redefine todos os campos do formulário para seus valores padrão.</td>
+                </tr>
+            
+            </table>
         </div>
 
         <div>
-            <label for="isenha">Input de senha → </label>
-            <input type="password" name="senha" id="isenha" placeholder="Censura o que foi escrito">  
+            <form action="cadastro.php" method="post">
+                <fieldset>
+                    <legend>Exemplos dos Inputs/Elementos </legend>
+                <div>
+                    <label for="itexto">Input de Texto → </label>
+                    <input type="text" name="texto" id="itexto" placeholder="Input que supórta todos os caracteres" minlength="10">
+                </div>
+                <div>
+                    <label for="isenha">Input de senha → </label>
+                    <input type="password" name="senha" id="isenha" placeholder="Censura o que foi escrito">
+                </div>
+                <div>
+                    <label for="inumero">Input de Números → </label>
+                    <input type="number" name="numero" id="inumero" placeholder="Só permite a digitação de numeros">
+                </div>
+                <div>
+                    <label for="idata">Input de data → </label>
+                    <input type="data" name="data" id="idata" placeholder="leitura de datas">
+                </div>
+                <div>
+                    <label for="imes">Input de mês → </label>
+                    <input type="month" name="mes" id="imes" placeholder="permite a inssersão de mes e ano">
+                </div>
+                <div>
+                    <label for="icor"> input para cores → </label>
+                    <input type="color" name="cor" id="icor">
+                </div>
+                <div>
+                    <label for="inivel">Input de nível → </label>
+                    <input type="range" name="nivel" id="inivel">
+                </div>
+                <div>
+                    <label for="iarquivo">Input de aquivo → </label>
+                    <input type="file" name="arquivo" id="iaruivo">
+                </div>
+                <div>
+                    <input type="submit" name="" id="">
+                </div>
+                <div>
+                    <input type="reset" name="" id="">
+                </div>
+            </fieldset>
+            
+            </form>
         </div>
 
-        <div>
-            <label for="inumero">Input de Números → </label>
-            <input type="number" name="numero" id="inumero" placeholder="Só permite a digitação de numeros">  
-        </div>
- 
-        <div>
-            <label for="idata">Input de data → </label>
-            <input type="data" name="data" id="idata" placeholder="leitura de datas">  
-        </div>
- 
-        <div>
-            <label for="imes">Input de mês → </label>
-            <input type="month" name="mes" id="imes" placeholder="permite a inssersão de mes e ano">  
-        </div>
- 
-        <div>
-            <label for="icor"> input para cores → </label>
-            <input type="color" name="cor" id="icor">  
-        </div>
- 
-        <div>
-            <label for="inivel">Input de nível → </label>
-            <input type="range" name="nivel" id="inivel">  
-        </div>
- 
-        <div>
-            <label for="iarquivo">Input de aquivo → </label>
-            <input type="file" name="arquivo" id="iaruivo">  
-        </div>
- 
-        <div>
-            <input type="submit" name="" id="">  
-        </div>
- 
-        <div>
-            <input type="reset" name="" id="">  
-        </div>
-    </fieldset>
-        
-    </form>
+    </div>
 
 </body>
 </html>
