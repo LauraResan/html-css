@@ -6,10 +6,34 @@
     <title>Formulários</title>
 
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    h1,h2{
+        text-align: center;
+        margin-top: px;
+    }
+    h1{
+        background-color: antiquewhite;
+        padding: 1% 10px 10px 10px;
+
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.404);
+    }
+    h2{
+       
+        margin: auto;
+        margin-top: 10px;
+
+    }
     table{
         width: 500px;
         border-collapse: collapse;
-        margin: auto;
+        margin: ;
+    }
+    code{
+        background-color: black;
+        color: rgb(30, 182, 13);
     }
     caption{
         font-size: x-large;
@@ -21,15 +45,23 @@
     td{
         padding: 4px;
     }
-    div#conteiner{
+    div.conteiner{
         display: flex;
+        margin-top: 40px;
+        
         flex-direction: row;
         gap: 10px;
-        margin-left: 50%;
+       
         align-items: center;
-        transform: translateX(-60%);
-    }    
-
+        justify-content: center;
+       
+    }   
+    fieldset{
+        padding: 10px;
+    } 
+    .atributos{
+        margin-top: 10px;
+    }
 </style>
 
 </head>
@@ -37,11 +69,12 @@
 <body>
     <h1>Todos os Elementos de formulários aprendidos no capitulos 24</h1>
 
-    <div id="conteiner">
+    <h2>Inputs</h2>
 
-        
+    <div class="conteiner">
+
         <div>
-            <table>
+            <table class="inputs">
                 <thead>
                     <th>Input</th>
                     <th>funções</th>
@@ -55,7 +88,7 @@
                     <td>Similar ao text, mas oculta o conteúdo inserido, substituindo-o por pontos ou asteriscos.</td>
                 </tr>
                 <tr>
-                    <td>Number</td>
+                    <td>number</td>
                     <td>Permite inserir apenas valores numéricos, e normalmente exibe setas para aumentar ou diminuir o valor.</td>
                 </tr>
                 <tr>
@@ -139,53 +172,84 @@
 
     </div>
 
-    <table>
+    <h2>Novas Tags & Atributos</h2>
+    
+    <div class="conteiner">
+    
+        
+    <table class="tags">
         <thead>
             <th>Atributos</th>
             <th>Funções</th>
         </thead>
         <tr>
-            <td>text</td>
-            <td>Permite inserir texto comum (como nome, endereço, etc.).</td>
+            <td>Form</td>
+            <td>é usada para criar um formulário HTML, que pode conter campos de entrada (como texto, botões, seleções, etc.) e ser enviado para um servidor..</td>
         </tr>
         <tr>
-            <td>password</td>
-            <td>Similar ao text, mas oculta o conteúdo inserido, substituindo-o por pontos ou asteriscos.</td>
+            <td>label</td>
+            <td>é usada para associar um rótulo a um campo de formulário. Isso melhora a acessibilidade, permitindo que os usuários cliquem no rótulo para focar no campo correspondente.</td>
         </tr>
         <tr>
-            <td>Number</td>
-            <td>Permite inserir apenas valores numéricos, e normalmente exibe setas para aumentar ou diminuir o valor.</td>
+            <td>fieldset</td>
+            <td>é usada para agrupar visualmente elementos relacionados dentro de um formulário. Ela cria uma borda ao redor do grupo de campos.</td>
         </tr>
         <tr>
-            <td>data</td>
-            <td>Exibe um seletor de data para escolher um dia, mês e ano.</td>
+            <td>legend</td>
+            <td>é usada dentro de um <code>fieldset</code> para fornecer um título ou legenda para o grupo de campos.</td>
+        </tr>
+        
+    </table>
+
+   
+    <table class="atributos">
+        <thead>
+            <th>Atributos</th>
+            <th>Funções</th>
+        </thead>
+        <tr>
+            <td>required</td>
+            <td>Indica que o campo é obrigatório.</td>
         </tr>
         <tr>
-            <td>month</td>
-            <td>Permite selecionar apenas o mês e o ano (sem um dia específico).</td>
+            <td>minlenght</td>
+            <td>Define o número mínimo de caracteres que o usuário deve inserir.</td>
         </tr>
         <tr>
-            <td>color</td>
-            <td>Exibe um seletor de cor para escolher um valor hexadecimal de cor.</td>
+            <td>maxlenght</td>
+            <td>Define o número máximo de caracteres permitidos no campo.</td>
         </tr>
         <tr>
-            <td>range</td>
-            <td>Exibe um controle deslizante para selecionar um valor dentro de um intervalo.</td>
+            <td>size</td>
+            <td>Define a largura do campo de texto, em número de caracteres visíveis.</td>
         </tr>
         <tr>
-            <td>file</td>
-            <td>Permite ao usuário selecionar um arquivo do sistema para upload.</td>
+            <td>placeholder</td>
+            <td>Exibe um texto de exemplo dentro do campo, que desaparece quando o usuário começa a digitar.</td>
         </tr>
         <tr>
-            <td>submit</td>
-            <td>Envia o formulário quando clicado.</td>
+            <td>autocomplete</td>
+            <td>Indica se o navegador deve preencher automaticamente o campo com dados previamente armazenados.</td>
         </tr>
         <tr>
-            <td>reset</td>
-            <td>Redefine todos os campos do formulário para seus valores padrão.</td>
+            <td>step</td>
+            <td>Define o intervalo entre os valores válidos para campos numéricos ou de data.</td>
+        </tr>
+        <tr>
+            <td>min/max</td>
+            <td>Define o valor mínimo e máximo permitidos para campos numéricos ou de data.</td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>Define um valor inicial padrão para o campo.</td>
+        </tr>
+        <tr>
+            <td>pattern</td>
+            <td>Define uma expressão regular para validação do campo.</td>
         </tr>
     
     </table>
+
 </div>
 
 </body>
