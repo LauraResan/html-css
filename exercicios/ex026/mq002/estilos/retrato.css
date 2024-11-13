@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* APARELHO EM ORIENTAÇÃO RETRATO (portrait) */
+
+body{
+    
+    background: url(../img/cev-portrait.jpg) center bottom;
+    
+}
+

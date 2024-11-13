@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* APARELHO EM ORIENTAÇÃO PAISAGEM (landscape) */
+
+body{
+
+    background: url(../img/cev-landscape.jpg) left bottom;
+    
+}
